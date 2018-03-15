@@ -1,0 +1,26 @@
+.btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.btn--sign-in {
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  padding: 8px 15.5px;
+}
+
+.btn--register {
+  height: 40px;
+  background-color: #262626;
+  border-radius: 2px;
+  color: #fff;
+  padding: 8px 15.5px;
+}
+
+.btn--basket {
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
