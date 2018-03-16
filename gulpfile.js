@@ -1,5 +1,6 @@
 const gulp = require("gulp"),
   sass = require("gulp-sass"),
+  imagemin = require("gulp-imagemin"),
   autoprefixer = require("gulp-autoprefixer");
 
 gulp.task("scss", function () {
@@ -13,6 +14,10 @@ gulp.task("scss", function () {
 
 gulp.task("img", function () {
   return gulp.src("src/img/**/*")
+    .pipe(imagemin([
+      imagemin.optipng({ optimizationLevel: 5 }),
+      imagemin.jpegtran({ progressive: true })
+    ]))
     .pipe(gulp.dest("build/img/"));
 });
 
