@@ -1,9 +1,13 @@
 const gulp = require("gulp"),
-  sass = require("gulp-sass");
+  sass = require("gulp-sass"),
+  autoprefixer = require("gulp-autoprefixer");
 
 gulp.task("scss", function () {
   return gulp.src("src/scss/main.scss")
     .pipe(sass({ includePaths: ["src/scss"] }).on("error", sass.logError))
+    .pipe(autoprefixer({
+      browsers: ["last 2 versions"]
+    }))
     .pipe(gulp.dest("build/css"));
 });
 
