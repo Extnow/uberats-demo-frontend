@@ -51,6 +51,14 @@
   font-size: 13px;
   color: #fff;
   text-decoration: none;
+
+  &:hover {
+    color: #e0e0e0;
+  }
+
+  &--small {
+    font-size: 11px;
+  }
 }
 
 .footer__download-app {
@@ -70,6 +78,6 @@
   padding: 40px 0 0 0;
   display: flex;
   justify-content: space-between;
-  font-size: 11px;
   color: #fff;
+  font-size: 11px;
 }
