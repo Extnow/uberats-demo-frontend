@@ -54,7 +54,7 @@
         <h2 class="title title--second">Moscow Restaurants</h2>
         <div class="row">
           <article class="restaurant-card">
-            <a href="#">
+            <a href="#" aria-label="restaurant McDonalds">
               <img src="build/img/restaraunts/McDonalds.png" alt="McDonalds">
             </a>
             <div class="restaurant-card__description">
@@ -65,7 +65,7 @@
           </article>
 
           <article class="restaurant-card">
-            <a href="#">
+            <a href="#" aria-label="restaurant DimSum&Co">
               <img src="build/img/restaraunts/DimSum&Co.png" alt="DimSum&Co">
             </a>
             <div class="restaurant-card__description">
@@ -76,7 +76,7 @@
           </article>
 
           <article class="restaurant-card">
-            <a href="#">
+            <a href="#" aria-label="restaurant ДвижОк">
               <img src="build/img/restaraunts/ДвижОк.png" alt="ДвижОк">
             </a>
             <div class="restaurant-card__description">
@@ -87,7 +87,7 @@
           </article>
 
           <article class="restaurant-card">
-            <a href="#">
+            <a href="#" aria-label="restaurant НЯ">
               <img src="build/img/restaraunts/НЯ.png" alt="НЯ">
             </a>
             <div class="restaurant-card__description">
@@ -98,7 +98,7 @@
           </article>
 
           <article class="restaurant-card">
-            <a href="#">
+            <a href="#" aria-label="restaurant ТочкаДзы">
               <img src="build/img/restaraunts/ТочкаДзы.png" alt="ТочкаДзы">
             </a>
             <div class="restaurant-card__description">
@@ -109,7 +109,7 @@
           </article>
 
           <article class="restaurant-card">
-            <a href="#">
+            <a href="#" aria-label="restaurant Cinnabon">
               <img src="build/img/restaraunts/Cinnabon.png" alt="Cinnabon">
             </a>
             <div class="restaurant-card__description">
@@ -120,7 +120,7 @@
           </article>
 
           <article class="restaurant-card">
-            <a href="#">
+            <a href="#" aria-label="restaurant Pizzelove">
               <img src="build/img/restaraunts/Pizzelove.png" alt="Pizzelove">
             </a>
             <div class="restaurant-card__description">
@@ -131,7 +131,7 @@
           </article>
 
           <article class="restaurant-card">
-            <a href="#">
+            <a href="#" aria-label="restaurant Zю">
               <img src="build/img/restaraunts/Zю.png" alt="Zю">
             </a>
             <div class="restaurant-card__description">
@@ -142,7 +142,7 @@
           </article>
 
           <article class="restaurant-card">
-            <a href="#">
+            <a href="#" aria-label="restaurant BarBQ">
               <img src="build/img/restaraunts/BarBQ.png" alt="BarBQ">
             </a>
             <div class="restaurant-card__description">
@@ -155,8 +155,91 @@
       </section>
     </div>
   </main>
-  <footer>
-
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <a href="#" aria-label="Uber Eats logo">
+            <img src="build/img/white-logo.svg" alt="UberEats">
+          </a>
+        </div>
+        <div class="footer__info">
+          <div class="footer__social">
+            <select class="select-languages">
+              <option value="">english</option>
+              <option value="">русский</option>
+            </select>
+            <p class="foter__social-id">
+              <span class="footer__hashtag">#</span>UberEats
+            </p>
+            <ul class="social-icons">
+              <li class="social-icons__item">
+                <a href="#" class="social-icons__link" aria-label="link to facebook">
+                  <img src="build/img/facebook.svg" alt="our facebook group">
+                </a>
+              </li>
+              <li class="social-icons__item">
+                <a href="#" class="social-icons__link" aria-label="link to twitter">
+                  <img src="build/img/twitter.svg" alt="our twitter account">
+                </a>
+              </li>
+              <li class="social-icons__item">
+                <a href="#" class="social-icons__link social-icons__link--instagram" aria-label="link on instagram">
+                  <img src="build/img/instagram.svg" alt="our instagram account">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="footer__about-links">
+            <li class="footer__item-link">
+              <a class="footer__link" href="#">About UberEats</a>
+            </li>
+            <li class="footer__item-link">
+              <a class="footer__link" href="#">Become a Delivery Partner</a>
+            </li>
+            <li class="footer__item-link">
+              <a class="footer__link" href="#">Become a Restaurant Partner</a>
+            </li>
+          </ul>
+          <ul class="footer__other-links">
+            <li class="footer__item-link">
+              <a class="footer__link" href="#">See all cities</a>
+            </li>
+            <li class="footer__item-link">
+              <a class="footer__link" href="#">Pricing</a>
+            </li>
+            <li class="footer__item-link">
+              <a class="footer__link" href="#">Help</a>
+            </li>
+            <li class="footer__item-link">
+              <a class="footer__link" href="#">FAQs</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__download-app">
+          <div class="footer__download-app__wrapper">
+            <a class="footer__download-in-app-store" href="#" aria-label="download in app store">
+              <img src="build/img/app_store.svg" alt="download uber eats application in app store">
+            </a>
+            <a class="footer__download-in-google-play" href="#" aria-label="download in google play">
+              <img src="build/img/google_play.svg" alt="download uber eats application in google play">
+            </a>
+          </div>
+        </div>
+        <div class="footer__other">
+          <div class="footer__copyright">
+            © 2017 Uber Technologies Inc.
+          </div>
+          <div class="footer__privacy">
+            Privacy
+          </div>
+          <div class="footer__terms">
+            Terms
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn--scroll-up" aria-label="scroll up"></button>
   </footer>
 </body>
 </html>

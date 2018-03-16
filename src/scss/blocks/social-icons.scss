@@ -1,0 +1,20 @@
+.social-icons {
+  display: flex;
+}
+
+.social-icons__item {
+  width: 24px;
+  height: 24px;
+
+  &:nth-child(1) {
+    margin-right: 12px;
+  }
+
+  &:nth-child(2) {
+    margin-right: 8px;
+  }
+}
+
+.social-icons__link {
+  display: inline-block;
+}
