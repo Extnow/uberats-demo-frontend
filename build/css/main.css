@@ -7,7 +7,19 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-family: 'Roboto'; }
+  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: normal; }
+
+.visuallyHidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
 
 .container {
   max-width: 956px;
@@ -15,60 +27,40 @@ body {
 
 .row {
   display: flex;
-  flex-wrap: wrap; }
-
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10,
-.col-11,
-.col-12 {
-  padding-left: 8px;
-  padding-right: 8px; }
-
-.col-1 {
-  flex-basis: 8.33%; }
-
-.col-2 {
-  flex-basis: 16.67%; }
-
-.col-3 {
-  flex-basis: 25%; }
-
-.col-4 {
-  flex-basis: 33.33%; }
-
-.col-5 {
-  flex-basis: 41.67%; }
-
-.col-6 {
-  flex-basis: 50%; }
-
-.col-7 {
-  flex-basis: 58.33%; }
-
-.col-8 {
-  flex-basis: 66.67%; }
-
-.col-9 {
-  flex-basis: 75%; }
-
-.col-10 {
-  flex-basis: 83.33%; }
-
-.col-11 {
-  flex-basis: 91.67%; }
-
-.col-12 {
-  flex-basis: 100%; }
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%; }
 
 /* blocks */
+.title {
+  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #1d1d1d; }
+
+.title--second {
+  line-height: 34px;
+  font-size: 22px; }
+
+.title--third {
+  line-height: 24px;
+  font-size: 16px;
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 4px; }
+
+.paragraph-light {
+  line-height: 21px;
+  font-size: 14px;
+  color: #626262;
+  margin: 0 0 4px 0; }
+
+.paragraph-general {
+  line-height: 21px;
+  font-size: 13px;
+  color: #1d1d1d;
+  margin: 0; }
+
 .btn {
   cursor: pointer;
   border: none;
@@ -123,9 +115,8 @@ body {
   background-repeat: no-repeat;
   background-position: 0 50%;
   color: #626262; }
-
-.input-search__wrapper {
-  padding-top: 29px; }
+  .input-search__wrapper {
+    padding-top: 29px; }
 
 .header {
   background-color: #fff;
@@ -151,3 +142,15 @@ body {
   display: flex;
   justify-content: space-between;
   flex-basis: 243px; }
+
+.section {
+  padding: 56px 0 80px; }
+
+.section--moscow-restaurants {
+  padding-bottom: 64px; }
+
+.restaurant-card {
+  width: 308px; }
+  .restaurant-card__description {
+    min-height: 110px;
+    margin-bottom: 16px; }

@@ -8,7 +8,7 @@ gulp.task("scss", function () {
 });
 
 gulp.task("img", function () {
-  return gulp.src("src/img/*")
+  return gulp.src("src/img/**/*")
     .pipe(gulp.dest("build/img/"));
 });
 
