@@ -8,6 +8,7 @@
   padding: 8px 12px;
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
 }
 
 .input-delivery {
@@ -20,3 +21,18 @@
   line-height: 24px;
 }
 
+.input-search {
+  width: 100%;
+  padding-left: 30px;
+  min-height: 50px;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  background-image: url("../img/magnifier.svg");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  color: #626262;
+}
+
+.input-search__wrapper {
+  padding-top: 29px;
+}

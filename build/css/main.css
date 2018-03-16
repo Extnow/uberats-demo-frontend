@@ -68,6 +68,7 @@ body {
 .col-12 {
   flex-basis: 100%; }
 
+/* blocks */
 .btn {
   cursor: pointer;
   border: none;
@@ -100,7 +101,8 @@ body {
   line-height: 24px;
   padding: 8px 12px;
   -webkit-appearance: none;
-  -moz-appearance: none; }
+  -moz-appearance: none;
+  appearance: none; }
 
 .input-delivery {
   min-width: 292px;
@@ -110,6 +112,20 @@ body {
   padding: 8px 36px;
   font-size: 16px;
   line-height: 24px; }
+
+.input-search {
+  width: 100%;
+  padding-left: 30px;
+  min-height: 50px;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  background-image: url("../img/magnifier.svg");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  color: #626262; }
+
+.input-search__wrapper {
+  padding-top: 29px; }
 
 .header {
   background-color: #fff;
