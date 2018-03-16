@@ -3,13 +3,27 @@
   box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
 }
 
-.header__buttons {
-  display: flex;
-}
-
 .header__wrapper {
   min-height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  flex-basis: 149px;
+}
+
+.header__choose-delivery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 389px;
+}
+
+.header__buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 243px;
 }
