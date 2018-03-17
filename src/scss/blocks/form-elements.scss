@@ -1,5 +1,4 @@
 .select-delivery {
-  min-width: 65px;
   height: 40px;
   border: 1px solid #e0e0e0;
   border-radius: 2px;
@@ -41,7 +40,7 @@
 }
 
 .input-delivery {
-  min-width: 292px;
+  flex-basis: 292px;
   border: 1px solid #e0e0e0;
   border-radius: 2px;
   height: 40px;
