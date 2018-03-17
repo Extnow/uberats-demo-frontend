@@ -394,9 +394,7 @@ a {
   padding: 8px 15.5px; }
 
 .btn--basket {
-  height: 40px;
-  background-repeat: no-repeat;
-  background-position: 0 50%; }
+  height: 40px; }
 
 .btn--scroll-up {
   position: absolute;
