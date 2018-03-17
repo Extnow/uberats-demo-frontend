@@ -499,6 +499,10 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
+  .header__buttons-item {
+    margin-right: 16px; }
+    .header__buttons-item:last-child {
+      margin-right: 0; }
 
 .section {
   padding: 56px 0 80px; }
