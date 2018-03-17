@@ -1,12 +1,365 @@
+$xs: 576px;
+$sm: 768px;
+$md: 991px;
+$lg: 1200px;
+
 .container {
-  max-width: 972px;
-  padding: 0 8px;
+  width: 956px;
   margin: 0 auto;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
+  flex-basis: 100%;
+  margin-left: -8px;
+  margin-right: -8px;
+
+  &--center {
+    align-items: center;
+  }
 }
+
+/* Large desktops and laptops */
+@media (min-width: $lg) {
+  .col-xl-1,
+  .col-xl-2,
+  .col-xl-3,
+  .col-xl-4,
+  .col-xl-5,
+  .col-xl-6,
+  .col-xl-7,
+  .col-xl-8,
+  .col-xl-9,
+  .col-xl-10,
+  .col-xl-11,
+  .col-xl-12 {
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+
+  .col-xl-1 {
+    flex-basis: 8.3333%;
+  }
+
+  .col-xl-2 {
+    flex-basis: 16.6666%;
+  }
+
+  .col-xl-3 {
+    flex-basis: 24.9999%;
+  }
+
+  .col-xl-4 {
+    flex-basis: 33.3333%;
+  }
+
+  .col-xl-5 {
+    flex-basis: 41.6665%;
+  }
+
+  .col-xl-6 {
+    flex-basis: 49.9998%;
+  }
+
+  .col-xl-7 {
+    flex-basis: 58.3331%;
+  }
+
+  .col-xl-8 {
+    flex-basis: 66.6664%;
+  }
+
+  .col-xl-9 {
+    flex-basis: 74.9997%;
+  }
+
+  .col-xl-10 {
+    flex-basis: 83.3333%;
+  }
+
+  .col-xl-11 {
+    flex-basis: 91.6663%;
+  }
+
+  .col-xl-12 {
+    flex-basis: 100%;
+  }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: $md) and (max-width: calc($lg-1)) {
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+
+  .col-lg-1 {
+    flex-basis: 8.3333%;
+  }
+
+  .col-lg-2 {
+    flex-basis: 16.6666%;
+  }
+
+  .col-lg-3 {
+    flex-basis: 24.9999%;
+  }
+
+  .col-lg-4 {
+    flex-basis: 33.3333%;
+  }
+
+  .col-lg-5 {
+    flex-basis: 41.6665%;
+  }
+
+  .col-lg-6 {
+    flex-basis: 49.9998%;
+  }
+
+  .col-lg-7 {
+    flex-basis: 58.3331%;
+  }
+
+  .col-lg-8 {
+    flex-basis: 66.6664%;
+  }
+
+  .col-lg-9 {
+    flex-basis: 74.9997%;
+  }
+
+  .col-lg-10 {
+    flex-basis: 83.3333%;
+  }
+
+  .col-lg-11 {
+    flex-basis: 91.6663%;
+  }
+
+  .col-lg-12 {
+    flex-basis: 100%;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: $sm) and (max-width: calc($md-1)) {
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12 {
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+
+  .col-md-1 {
+    flex-basis: 8.3333%;
+  }
+
+  .col-md-2 {
+    flex-basis: 16.6666%;
+  }
+
+  .col-md-3 {
+    flex-basis: 24.9999%;
+  }
+
+  .col-md-4 {
+    flex-basis: 33.3333%;
+  }
+
+  .col-md-5 {
+    flex-basis: 41.6665%;
+  }
+
+  .col-md-6 {
+    flex-basis: 49.9998%;
+  }
+
+  .col-md-7 {
+    flex-basis: 58.3331%;
+  }
+
+  .col-md-8 {
+    flex-basis: 66.6664%;
+  }
+
+  .col-md-9 {
+    flex-basis: 74.9997%;
+  }
+
+  .col-md-10 {
+    flex-basis: 83.3333%;
+  }
+
+  .col-md-11 {
+    flex-basis: 91.6663%;
+  }
+
+  .col-md-12 {
+    flex-basis: 100%;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: $xs) and (max-width: calc($sm-1)) {
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12 {
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+
+  .col-sm-1 {
+    flex-basis: 8.3333%;
+  }
+
+  .col-sm-2 {
+    flex-basis: 16.6666%;
+  }
+
+  .col-sm-3 {
+    flex-basis: 24.9999%;
+  }
+
+  .col-sm-4 {
+    flex-basis: 33.3333%;
+  }
+
+  .col-sm-5 {
+    flex-basis: 41.6665%;
+  }
+
+  .col-sm-6 {
+    flex-basis: 49.9998%;
+  }
+
+  .col-sm-7 {
+    flex-basis: 58.3331%;
+  }
+
+  .col-sm-8 {
+    flex-basis: 66.6664%;
+  }
+
+  .col-sm-9 {
+    flex-basis: 74.9997%;
+  }
+
+  .col-sm-10 {
+    flex-basis: 83.3333%;
+  }
+
+  .col-sm-11 {
+    flex-basis: 91.6663%;
+  }
+
+  .col-sm-12 {
+    flex-basis: 100%;
+  }
+}
+
+/* Portrait phones and smaller */
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
+  padding-left: 8px;
+  padding-right: 8px;
+  box-sizing: border-box;
+}
+
+.col-xs-0 {
+  flex-basis: 0;
+}
+
+.col-xs-1 {
+  flex-basis: 8.3333%;
+}
+
+.col-xs-2 {
+  flex-basis: 16.6666%;
+}
+
+.col-xs-3 {
+  flex-basis: 24.9999%;
+}
+
+.col-xs-4 {
+  flex-basis: 33.3333%;
+}
+
+.col-xs-5 {
+  flex-basis: 41.6665%;
+}
+
+.col-xs-6 {
+  flex-basis: 49.9998%;
+}
+
+.col-xs-7 {
+  flex-basis: 58.3331%;
+}
+
+.col-xs-8 {
+  flex-basis: 66.6664%;
+}
+
+.col-xs-9 {
+  flex-basis: 74.9997%;
+}
+
+.col-xs-10 {
+  flex-basis: 83.3333%;
+}
+
+.col-xs-11 {
+  flex-basis: 91.6663%;
+}
+
+.col-xs-12 {
+  flex-basis: 100%;
+}
+
+

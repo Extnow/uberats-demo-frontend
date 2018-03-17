@@ -14,19 +14,8 @@
 }
 
 .footer__info {
-  display: flex;
-  justify-content: space-between;
   padding: 32px 0 48px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-.footer__social,
-.footer__about-links,
-.footer__other-links,
-.footer__copyright,
-.footer__privacy,
-.footer__terms {
-  width: 227px;
 }
 
 .foter__social-id {
@@ -76,8 +65,6 @@
 
 .footer__other {
   padding: 40px 0 0 0;
-  display: flex;
-  justify-content: space-between;
   color: #fff;
   font-size: 11px;
 }
