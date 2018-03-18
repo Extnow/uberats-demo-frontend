@@ -1,17 +1,17 @@
-$xs: 576px;
-$sm: 768px;
-$md: 991px;
-$lg: 1200px;
+$xs: 'max-width: 575px';
+$sm: 'min-width: 576px';
+$md: 'min-width: 768px';
+$lg: 'min-width: 991px';
+$xl: 'min-width: 1200px';
 
 .container {
-  width: 956px;
+  max-width: 956px;
   margin: 0 auto;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 100%;
   margin-left: -8px;
   margin-right: -8px;
 
@@ -21,7 +21,7 @@ $lg: 1200px;
 }
 
 /* Large desktops and laptops */
-@media (min-width: $lg) {
+@media ($xl) {
   .col-xl-1,
   .col-xl-2,
   .col-xl-3,
@@ -89,7 +89,7 @@ $lg: 1200px;
 }
 
 /* Landscape tablets and medium desktops */
-@media (min-width: $md) and (max-width: calc($lg-1)) {
+@media ($lg) {
   .col-lg-1,
   .col-lg-2,
   .col-lg-3,
@@ -157,7 +157,7 @@ $lg: 1200px;
 }
 
 /* Portrait tablets and small desktops */
-@media (min-width: $sm) and (max-width: calc($md-1)) {
+@media ($md) {
   .col-md-1,
   .col-md-2,
   .col-md-3,
@@ -225,7 +225,7 @@ $lg: 1200px;
 }
 
 /* Landscape phones and portrait tablets */
-@media (min-width: $xs) and (max-width: calc($sm-1)) {
+@media ($sm) {
   .col-sm-1,
   .col-sm-2,
   .col-sm-3,

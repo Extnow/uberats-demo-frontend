@@ -7,7 +7,7 @@
   "editor.mouseWheelZoom": true,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
-  "files.defaultLanguage": "ru",
+  "files.defaultLanguage": "html",
   "workbench.iconTheme": "material-icon-theme",
   "editor.renderWhitespace": "boundary",
   // Set the default
