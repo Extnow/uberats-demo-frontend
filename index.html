@@ -14,33 +14,33 @@
     <div class="container">
       <div class="header__wrapper">
         <div class="row row--center">
-          <div class="col-xs-0">
+          <div class="col-0">
             <h1 class="visuallyHidden">
               Доставка еды одним нажатием кнопки | Uber Eats
             </h1>
           </div>
 
-          <div class="col-xs-3">
+          <div class="col-xs-4 col-sm-2 col-md-2">
             <div class="header__logo">
               <a href="#">
-                <img src="build/img/logo.svg" alt="UberEats">
+                <img src="build/img/logo.svg" width="100%" alt="UberEats">
               </a>
             </div>
           </div>
 
-          <div class="col-xs-5">
+          <div class="col-xs-0 col-sm-6 col-md-5">
             <div class="header__choose-delivery">
               <select class="select-delivery-type">
                 <option>ASAP</option>
               </select>
-              <span>
+              <span class="header__padding-space">
                 to
               </span>
               <input class="input-delivery-location" type="text" , placeholder="ul. Bolshaya Dmitrovka,22">
             </div>
           </div>
 
-          <div class="col-xs-4">
+          <div class="col-xs-8 col-sm-4 col-md-5">
             <ul class="header__buttons">
               <li class="header__buttons-item">
                 <button class="btn btn--sign-in">Sign In</button>
@@ -48,7 +48,7 @@
               <li class="header__buttons-item">
                 <button class="btn btn--register">Register</button>
               </li>
-              <li class="header__buttons-item">
+              <li class="header__buttons-item header__buttons-item--basket">
                 <button class="btn btn--basket" aria-label="корзина">
                   <img src="build/img/basket.svg" alt="корзина">
                 </button>
@@ -63,16 +63,24 @@
   <main>
     <div class="container">
       <div class="input-search__wrapper">
-        <input class="input-search" placeholder="Search for restaurant or cuisine">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+            <input class="input-search" placeholder="Search for restaurant or cuisine">
+          </div>
+        </div>
       </div>
 
       <section class="section section--moscow-restaurants">
-        <h2 class="title title--second">Moscow Restaurants</h2>
         <div class="row">
-          <div class="col-xs-4">
+          <div class="col-xs-12 col-sm-12">
+            <h2 class="title title--second">Moscow Restaurants</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4">
             <article class="restaurant-card">
-              <a href="#" aria-label="restaurant McDonalds">
-                <img src="build/img/restaraunts/McDonalds.png" alt="McDonalds">
+              <a href="#" class="restaurant-card__restaurant-link" aria-label="restaurant McDonalds">
+                <img width="100%" src="build/img/restaraunts/McDonalds.png" alt="McDonalds">
               </a>
               <div class="restaurant-card__description">
                 <h3 class="title title--third">Макдоналдс — Газетный</h3>
@@ -82,10 +90,10 @@
             </article>
           </div>
 
-          <div class="col-xs-4">
+          <div class="col-xs-12 col-sm-6 col-md-4">
             <article class="restaurant-card">
-              <a href="#" aria-label="restaurant DimSum&Co">
-                <img src="build/img/restaraunts/DimSum&Co.png" alt="DimSum&Co">
+              <a href="#" class="restaurant-card__restaurant-link" aria-label="restaurant DimSum&Co">
+                <img width="100%" src="build/img/restaraunts/DimSum&Co.png" alt="DimSum&Co">
               </a>
               <div class="restaurant-card__description">
                 <h3 class="title title--third">DimSum & Co — ЦДМ</h3>
@@ -95,10 +103,10 @@
             </article>
           </div>
 
-          <div class="col-xs-4">
+          <div class="col-xs-12 col-sm-6 col-md-4">
             <article class="restaurant-card">
-              <a href="#" aria-label="restaurant ДвижОк">
-                <img src="build/img/restaraunts/ДвижОк.png" alt="ДвижОк">
+              <a href="#" class="restaurant-card__restaurant-link" aria-label="restaurant ДвижОк">
+                <img width="100%" src="build/img/restaraunts/ДвижОк.png" alt="ДвижОк">
               </a>
               <div class="restaurant-card__description">
                 <h3 class="title title--third">ДвижОК — Манежная</h3>
@@ -108,10 +116,10 @@
             </article>
           </div>
 
-          <div class="col-xs-4">
+          <div class="col-xs-12 col-sm-6 col-md-4">
             <article class="restaurant-card">
-              <a href="#" aria-label="restaurant НЯ">
-                <img src="build/img/restaraunts/НЯ.png" alt="НЯ">
+              <a href="#" class="restaurant-card__restaurant-link" aria-label="restaurant НЯ">
+                <img width="100%" src="build/img/restaraunts/НЯ.png" alt="НЯ">
               </a>
               <div class="restaurant-card__description">
                 <h3 class="title title--third">НЯ — NHA</h3>
@@ -121,10 +129,10 @@
             </article>
           </div>
 
-          <div class="col-xs-4">
+          <div class="col-xs-12 col-sm-6 col-md-4">
             <article class="restaurant-card">
-              <a href="#" aria-label="restaurant ТочкаДзы">
-                <img src="build/img/restaraunts/ТочкаДзы.png" alt="ТочкаДзы">
+              <a href="#" class="restaurant-card__restaurant-link" aria-label="restaurant ТочкаДзы">
+                <img width="100%" src="build/img/restaraunts/ТочкаДзы.png" alt="ТочкаДзы">
               </a>
               <div class="restaurant-card__description">
                 <h3 class="title title--third">Точка Дзы — Цветной</h3>
@@ -135,10 +143,10 @@
           </div>
 
 
-          <div class="col-xs-4">
+          <div class="col-xs-12 col-sm-6 col-md-4">
             <article class="restaurant-card">
-              <a href="#" aria-label="restaurant Cinnabon">
-                <img src="build/img/restaraunts/Cinnabon.png" alt="Cinnabon">
+              <a href="#" class="restaurant-card__restaurant-link" aria-label="restaurant Cinnabon">
+                <img width="100%" src="build/img/restaraunts/Cinnabon.png" alt="Cinnabon">
               </a>
               <div class="restaurant-card__description">
                 <h3 class="title title--third">Cinnabon</h3>
@@ -149,10 +157,10 @@
           </div>
 
 
-          <div class="col-xs-4">
+          <div class="col-xs-12 col-sm-6 col-md-4">
             <article class="restaurant-card">
-              <a href="#" aria-label="restaurant Pizzelove">
-                <img src="build/img/restaraunts/Pizzelove.png" alt="Pizzelove">
+              <a href="#" class="restaurant-card__restaurant-link" aria-label="restaurant Pizzelove">
+                <img width="100%" src="build/img/restaraunts/Pizzelove.png" alt="Pizzelove">
               </a>
               <div class="restaurant-card__description">
                 <h3 class="title title--third">PIZZELOVE</h3>
@@ -162,10 +170,10 @@
             </article>
           </div>
 
-          <div class="col-xs-4">
+          <div class="col-xs-12 col-sm-6 col-md-4">
             <article class="restaurant-card">
-              <a href="#" aria-label="restaurant Zю">
-                <img src="build/img/restaraunts/Zю.png" alt="Zю">
+              <a href="#" class="restaurant-card__restaurant-link" aria-label="restaurant Zю">
+                <img width="100%" src="build/img/restaraunts/Zю.png" alt="Zю">
               </a>
               <div class="restaurant-card__description">
                 <h3 class="title title--third">Zю кафе — Тверская</h3>
@@ -175,10 +183,10 @@
             </article>
           </div>
 
-          <div class="col-xs-4">
+          <div class="col-xs-12 col-sm-6 col-md-4">
             <article class="restaurant-card">
-              <a href="#" aria-label="restaurant BarBQ">
-                <img src="build/img/restaraunts/BarBQ.png" alt="BarBQ">
+              <a href="#" class="restaurant-card__restaurant-link" aria-label="restaurant BarBQ">
+                <img width="100%" src="build/img/restaraunts/BarBQ.png" alt="BarBQ">
               </a>
               <div class="restaurant-card__description">
                 <h3 class="title title--third">Bar BQ Cafe — Манежная</h3>
@@ -195,15 +203,19 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__wrapper">
-        <div class="footer__logo">
-          <a href="#" aria-label="Uber Eats logo">
-            <img src="build/img/white-logo.svg" alt="UberEats">
-          </a>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+            <div class="footer__logo">
+              <a href="#" aria-label="Uber Eats logo">
+                <img src="build/img/white-logo.svg" alt="UberEats">
+              </a>
+            </div>
+          </div>
         </div>
 
         <div class="footer__info">
           <div class="row">
-            <div class="col-xs-4">
+            <div class="col-xs-12 col-sm-4">
               <div class="footer__social">
                 <select class="select-languages">
                   <option value="">english</option>
@@ -232,7 +244,7 @@
               </div>
             </div>
 
-            <div class="col-xs-4">
+            <div class="col-xs-12 col-sm-4">
               <ul class="footer__about-links">
                 <li class="footer__item-link">
                   <a class="footer__link" href="#">About UberEats</a>
@@ -246,7 +258,7 @@
               </ul>
             </div>
 
-            <div class="col-xs-4">
+            <div class="col-xs-12 col-sm-4">
               <ul class="footer__other-links">
                 <li class="footer__item-link">
                   <a class="footer__link" href="#">See all cities</a>
@@ -278,19 +290,19 @@
 
         <div class="footer__other">
           <div class="row">
-            <div class="col-xs-4">
+            <div class="col-xs-12 col-sm-4">
               <div class="footer__copyright">
                 © 2017 Uber Technologies Inc.
               </div>
             </div>
 
-            <div class="col-xs-4">
+            <div class="col-xs-12 col-sm-4">
               <div class="footer__privacy">
                 <a class="footer__link footer__link--small" href="#">Privacy</a>
               </div>
             </div>
 
-            <div class="col-xs-4">
+            <div class="col-xs-12 col-sm-4">
               <div class="footer__terms">
                 <a class="footer__link footer__link--small" href="#">Terms</a>
               </div>

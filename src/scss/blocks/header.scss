@@ -7,6 +7,12 @@
   }
 }
 
+@media (max-width: 913px) {
+  .header {
+    font-size: 13px;
+  }
+}
+
 .header__logo {
   display: flex;
   align-self: center;
@@ -15,18 +21,28 @@
 .header__choose-delivery {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+.header__padding-space {
+  padding: 0 10px;
 }
 
 .header__buttons {
   display: flex;
   justify-content: flex-end;
+  flex-shrink: 1;
 
   &-item {
-    margin-right: 16px;
+    margin-left: 16px;
 
-    &:last-child {
-      margin-right: 0;
+    &:first-child {
+      margin-left: 0;
     }
+  }
+}
+
+@media (max-width: 461px) {
+  .header__buttons-item--basket {
+    display: none;
   }
 }

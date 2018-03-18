@@ -50,12 +50,20 @@
   }
 }
 
+@media ($xs) {
+  .footer__about-links,
+  .footer__other-links {
+    margin-top: 23px;
+  }
+}
+
 .footer__download-app {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 
   &__wrapper {
     min-height: 120px;
-    width: 297px;
+    max-width: 297px;
+    min-width: 240px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -67,4 +75,11 @@
   padding: 40px 0 0 0;
   color: #fff;
   font-size: 11px;
+}
+
+@media ($xs) {
+  .footer__privacy,
+  .footer__terms {
+    margin-top: 23px;
+  }
 }
