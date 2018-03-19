@@ -11,7 +11,8 @@
   padding: 8px 15.5px;
   transition: all 400ms ease;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: rgb(245, 245, 245);
   }
 }
