@@ -57,6 +57,13 @@
   }
 }
 
+@media ($sm) {
+  .footer__about-links,
+  .footer__other-links {
+    margin-top: 0px;
+  }
+}
+
 .footer__download-app {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 
@@ -81,5 +88,12 @@
   .footer__privacy,
   .footer__terms {
     margin-top: 23px;
+  }
+}
+
+@media ($sm) {
+  .footer__privacy,
+  .footer__terms {
+    margin-top: 0px;
   }
 }

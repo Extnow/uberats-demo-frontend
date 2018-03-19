@@ -55,7 +55,7 @@ a {
       flex-basis: 0; }
 
 /* Portrait phones and smaller */
-@media (max-width: 460px) {
+@media (min-width: 300px) {
   .col-xs-1,
   .col-xs-2,
   .col-xs-3,
@@ -163,7 +163,7 @@ a {
         flex-basis: 100%; } }
 
 /* Portrait tablets and small desktops */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .col-md-1,
   .col-md-2,
   .col-md-3,
@@ -356,17 +356,18 @@ a {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end;
-  -ms-flex-negative: 1;
-      flex-shrink: 1; }
+          justify-content: flex-end; }
   .header__buttons-item {
     margin-left: 16px; }
     .header__buttons-item:first-child {
       margin-left: 0; }
 
-@media (max-width: 461px) {
+.header__buttons-item--basket {
+  display: none; }
+
+@media (min-width: 461px) {
   .header__buttons-item--basket {
-    display: none; } }
+    display: block; } }
 
 .section {
   padding: 56px 0 80px; }
@@ -374,11 +375,7 @@ a {
 .section--moscow-restaurants {
   padding-bottom: 64px; }
 
-@media (max-width: 460px) {
-  .section--moscow-restaurants {
-    padding-top: 24px; } }
-
-@media (min-width: 461px) {
+@media (min-width: 300px) {
   .section--moscow-restaurants {
     padding-top: 24px; } }
 
@@ -430,10 +427,15 @@ a {
   .footer__link--small {
     font-size: 11px; }
 
-@media (max-width: 460px) {
+@media (min-width: 300px) {
   .footer__about-links,
   .footer__other-links {
     margin-top: 23px; } }
+
+@media (min-width: 461px) {
+  .footer__about-links,
+  .footer__other-links {
+    margin-top: 0px; } }
 
 .footer__download-app {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
@@ -457,10 +459,15 @@ a {
   color: #fff;
   font-size: 11px; }
 
-@media (max-width: 460px) {
+@media (min-width: 300px) {
   .footer__privacy,
   .footer__terms {
     margin-top: 23px; } }
+
+@media (min-width: 461px) {
+  .footer__privacy,
+  .footer__terms {
+    margin-top: 0px; } }
 
 .social-icons {
   display: -webkit-box;
@@ -486,11 +493,7 @@ a {
       -ms-flex-align: center;
           align-items: center; }
 
-@media (max-width: 460px) {
-  .choose-delivery {
-    display: none; } }
-
-@media (min-width: 461px) {
+@media (min-width: 300px) {
   .choose-delivery {
     display: none; } }
 

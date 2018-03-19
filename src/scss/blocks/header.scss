@@ -21,7 +21,6 @@
 .header__buttons {
   display: flex;
   justify-content: flex-end;
-  flex-shrink: 1;
 
   &-item {
     margin-left: 16px;
@@ -32,8 +31,12 @@
   }
 }
 
-@media (max-width: 461px) {
+.header__buttons-item--basket {
+  display: none;
+}
+
+@media ($sm) {
   .header__buttons-item--basket {
-    display: none;
+    display: block;
   }
 }

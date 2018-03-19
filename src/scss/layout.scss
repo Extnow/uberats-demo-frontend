@@ -1,4 +1,4 @@
-$xs: 'max-width: 460px';
+$xs: 'min-width: 300px';
 $sm: 'min-width: 461px';
 $md: 'min-width: 769px';
 
@@ -162,7 +162,7 @@ $md: 'min-width: 769px';
 }
 
 /* Portrait tablets and small desktops */
-@media (min-width: 768px) {
+@media ($md) {
   .col-md-1,
   .col-md-2,
   .col-md-3,
