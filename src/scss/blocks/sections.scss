@@ -5,3 +5,21 @@
 .section--moscow-restaurants {
   padding-bottom: 64px;
 }
+
+@media ($xs) {
+  .section--moscow-restaurants {
+    padding-top: 24px;
+  }
+}
+
+@media ($sm) {
+  .section--moscow-restaurants {
+    padding-top: 24px;
+  }
+}
+
+@media ($md) {
+  .section--moscow-restaurants {
+    padding-top: 40px;
+  }
+}

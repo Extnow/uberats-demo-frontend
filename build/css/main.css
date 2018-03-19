@@ -350,17 +350,6 @@ a {
   -ms-flex-item-align: center;
       align-self: center; }
 
-.header__choose-delivery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.header__padding-space {
-  padding: 0 10px; }
-
 .header__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -384,6 +373,18 @@ a {
 
 .section--moscow-restaurants {
   padding-bottom: 64px; }
+
+@media (max-width: 460px) {
+  .section--moscow-restaurants {
+    padding-top: 24px; } }
+
+@media (min-width: 461px) {
+  .section--moscow-restaurants {
+    padding-top: 24px; } }
+
+@media (min-width: 769px) {
+  .section--moscow-restaurants {
+    padding-top: 40px; } }
 
 .restaurant-card__description {
   min-height: 110px;
@@ -476,3 +477,35 @@ a {
 
 .social-icons__link {
   display: inline-block; }
+
+.choose-delivery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+@media (max-width: 460px) {
+  .choose-delivery {
+    display: none; } }
+
+@media (min-width: 461px) {
+  .choose-delivery {
+    display: none; } }
+
+@media (min-width: 769px) {
+  .choose-delivery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.choose-delivery__padding-space {
+  padding: 0 10px; }
+
+.choose-delivery__main {
+  padding-top: 23px; }
+
+@media (min-width: 769px) {
+  .choose-delivery__main {
+    display: none; } }
