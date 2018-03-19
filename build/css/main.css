@@ -257,7 +257,7 @@ a {
   padding: 8px 15.5px;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease; }
-  .btn--sign-in:hover {
+  .btn--sign-in:hover, .btn--sign-in:focus {
     background-color: whitesmoke; }
 
 .btn--register {
@@ -481,9 +481,6 @@ a {
     margin-right: 12px; }
   .social-icons__item:nth-child(2) {
     margin-right: 8px; }
-
-.social-icons__link {
-  display: inline-block; }
 
 .choose-delivery {
   display: -webkit-box;
