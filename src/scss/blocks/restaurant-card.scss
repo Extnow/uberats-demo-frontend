@@ -1,0 +1,10 @@
+.restaurant-card {
+  &__description {
+    min-height: 110px;
+    margin-bottom: 16px;
+  }
+
+  &__restaurant-link {
+    width: 100%;
+  }
+}

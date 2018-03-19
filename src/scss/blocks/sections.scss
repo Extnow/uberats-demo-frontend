@@ -1,0 +1,19 @@
+.section {
+  padding: 56px 0 80px;
+}
+
+.section--moscow-restaurants {
+  padding-bottom: 64px;
+}
+
+@media ($xs) {
+  .section--moscow-restaurants {
+    padding-top: 24px;
+  }
+}
+
+@media ($md) {
+  .section--moscow-restaurants {
+    padding-top: 40px;
+  }
+}
