@@ -1,0 +1,20 @@
+.banner {
+  background-image: url(../img/pushkin/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media ($xs) {
+  .banner {
+    min-height: 255px;
+    max-height: 256px;
+    padding-top: 131px;
+  }
+}
+
+@media ($sm) {
+  .banner {
+    padding: 80px 0;
+    min-height: 364px;
+  }
+}
