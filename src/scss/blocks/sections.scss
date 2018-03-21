@@ -1,7 +1,3 @@
-.section {
-  padding: 56px 0 80px;
-}
-
 .section--moscow-restaurants {
   padding-bottom: 64px;
 }
@@ -10,10 +6,40 @@
   .section--moscow-restaurants {
     padding-top: 24px;
   }
+
+  .section--restaurant-menu {
+    padding-top: 111px;
+    padding-bottom: 80px;
+  }
+
+  .section__title {
+    text-align: center;
+    line-height: 34px;
+    margin-bottom: 56px;
+
+    &:after {
+      display: block;
+      content: "";
+      height: 1px;
+      width: 50px;
+      margin: 0 auto;
+      background-color: #757575;
+    }
+  }
 }
 
-@media ($md) {
-  .section--moscow-restaurants {
+@media ($sm) {
+  .section--restaurant-menu {
     padding-top: 40px;
+  }
+
+  .section__title {
+    text-align: left;
+    line-height: 34px;
+    margin-bottom: 32px;
+
+    &:after {
+      display: none;
+    }
   }
 }

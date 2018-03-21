@@ -220,18 +220,28 @@ a {
   font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: normal;
   font-weight: normal;
-  color: #1d1d1d; }
+  color: #1d1d1d;
+  margin: 0; }
+
+@media (min-width: 300px) {
+  .title--first {
+    font-size: 24px;
+    line-height: 28px; } }
+
+@media (min-width: 461px) {
+  .title--first {
+    font-size: 36px; } }
 
 .title--second {
   line-height: 34px;
-  font-size: 22px; }
+  font-size: 22px;
+  margin: 16px 0; }
 
 .title--third {
   line-height: 24px;
   font-size: 16px;
   margin: 0;
-  padding-top: 16px;
-  padding-bottom: 4px; }
+  margin-bottom: 4px; }
 
 .paragraph-light {
   line-height: 21px;
@@ -369,26 +379,101 @@ a {
   .header__buttons-item--basket {
     display: block; } }
 
-.section {
-  padding: 56px 0 80px; }
-
 .section--moscow-restaurants {
   padding-bottom: 64px; }
 
 @media (min-width: 300px) {
   .section--moscow-restaurants {
-    padding-top: 24px; } }
+    padding-top: 24px; }
+  .section--restaurant-menu {
+    padding-top: 111px;
+    padding-bottom: 80px; }
+  .section__title {
+    text-align: center;
+    line-height: 34px;
+    margin-bottom: 56px; }
+    .section__title:after {
+      display: block;
+      content: "";
+      height: 1px;
+      width: 50px;
+      margin: 0 auto;
+      background-color: #757575; } }
 
-@media (min-width: 769px) {
-  .section--moscow-restaurants {
-    padding-top: 40px; } }
+@media (min-width: 461px) {
+  .section--restaurant-menu {
+    padding-top: 40px; }
+  .section__title {
+    text-align: left;
+    line-height: 34px;
+    margin-bottom: 32px; }
+    .section__title:after {
+      display: none; } }
 
 .restaurant-card__description {
+  padding-top: 16px;
   min-height: 110px;
   margin-bottom: 16px; }
 
 .restaurant-card__restaurant-link {
   width: 100%; }
+
+.restaurant-card--banner {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+          box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+  border-radius: 2px; }
+
+@media (min-width: 300px) {
+  .restaurant-card--banner {
+    text-align: center;
+    padding: 24px;
+    min-height: 180px; } }
+
+@media (min-width: 461px) {
+  .restaurant-card--banner {
+    padding: 38px 32px;
+    min-height: 204px; } }
+
+@media (min-width: 300px) {
+  .restaurant-card__properties {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 40px;
+    min-height: 70px; } }
+
+@media (min-width: 540px) {
+  .restaurant-card__properties {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+
+@media (min-width: 300px) {
+  .restaurant-card__delivery-time {
+    background: #262626;
+    border-radius: 16px;
+    padding: 8px 16px;
+    font-size: 13px;
+    color: #fff;
+    -ms-flex-item-align: center;
+        align-self: center; } }
+
+@media (min-width: 540px) {
+  .restaurant-card__delivery-time {
+    -ms-flex-item-align: end;
+        align-self: flex-end; } }
 
 .footer {
   background-color: #262626;
@@ -509,3 +594,77 @@ a {
 @media (min-width: 769px) {
   .choose-delivery__main {
     display: none; } }
+
+.banner {
+  background-image: url(../img/pushkin/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+@media (min-width: 300px) {
+  .banner {
+    min-height: 255px;
+    max-height: 256px;
+    padding-top: 131px; } }
+
+@media (min-width: 461px) {
+  .banner {
+    padding: 80px 0;
+    min-height: 364px; } }
+
+.food-type {
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  display: none; }
+
+@media (min-width: 461px) {
+  .food-type {
+    display: block; } }
+
+.food-type__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 16px 0; }
+
+.food-type__item {
+  margin-right: 40px; }
+  .food-type__item:last-child {
+    margin-right: 0; }
+
+.food-type__link {
+  padding: 16px 0;
+  font-size: 16px;
+  color: #626262; }
+  .food-type__link--active {
+    color: #327430; }
+  .food-type__link:hover {
+    color: #327430; }
+
+.dish-card {
+  min-width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+  min-height: 160px;
+  margin-bottom: 49px; }
+  .dish-card__description {
+    width: 100%;
+    padding: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .dish-card__price {
+    margin-top: auto; }
+
+.dish-card__photo {
+  display: block; }
