@@ -8,3 +8,6 @@
 * Код-ревью;
 * Качественно выполненный проект в портфолио;
 * Прохождение курса должно стать логическим этапом перехода от стажера к младшему разработчику.
+
+#### https://extnow.github.io/verstka/index.html
+#### https://extnow.github.io/verstka/restaurant.html
