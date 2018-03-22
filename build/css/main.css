@@ -595,19 +595,18 @@ a {
   .choose-delivery__main {
     display: none; } }
 
-.banner {
-  background-image: url(../img/pushkin/banner.png);
-  background-repeat: no-repeat;
-  background-size: cover; }
-
 @media (min-width: 300px) {
   .banner {
+    background-image: url(../img/pushkin/banner_min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 255px;
     max-height: 256px;
     padding-top: 131px; } }
 
 @media (min-width: 461px) {
   .banner {
+    background-image: url(../img/pushkin/banner.png);
     padding: 80px 0;
     min-height: 364px; } }
 
@@ -638,33 +637,48 @@ a {
   color: #626262; }
   .food-type__link--active {
     color: #327430; }
-  .food-type__link:hover {
+  .food-type__link:hover, .food-type__link:focus {
     color: #327430; }
 
-.dish-card {
-  min-width: 360px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border: 1px solid rgba(117, 117, 117, 0.2);
-  border-radius: 2px;
-  min-height: 160px;
-  margin-bottom: 49px; }
-  .dish-card__description {
-    width: 100%;
-    padding: 16px;
+@media (min-width: 300px) {
+  .dish-card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .dish-card__price {
-    margin-top: auto; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-height: 109px;
+    min-width: 200px;
+    border: 1px solid rgba(117, 117, 117, 0.2);
+    border-radius: 2px;
+    margin-bottom: 16px; }
+    .dish-card__description {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 6px; }
+    .dish-card__photo {
+      display: block;
+      width: 114px; }
+    .dish-card__price {
+      margin-top: auto; } }
 
-.dish-card__photo {
-  display: block; }
+@media (min-width: 461px) {
+  .dish-card {
+    min-width: 360px;
+    min-height: 160px;
+    margin-bottom: 32px; }
+    .dish-card__description {
+      padding: 16px; }
+    .dish-card__photo {
+      width: auto; } }
+
+@media (min-width: 769px) {
+  .dish-card {
+    margin-bottom: 49px; } }
