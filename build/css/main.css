@@ -608,9 +608,9 @@ a {
 
 @media (min-width: 461px) {
   .banner {
-    background-image: url(https://ucarecdn.com/089a9df0-9cd6-48d5-a7ed-05a9c0ab9499/banner.png);
-    background-image: -webkit-image-set(url(https://ucarecdn.com/089a9df0-9cd6-48d5-a7ed-05a9c0ab9499/banner.png) 1x, url(https://ucarecdn.com/c6613776-54dd-412f-827e-58af8ecea41a/banner2x.jpg) 2x);
-    background-image: image-set(url(https://ucarecdn.com/089a9df0-9cd6-48d5-a7ed-05a9c0ab9499/banner.png) 1x, url(https://ucarecdn.com/c6613776-54dd-412f-827e-58af8ecea41a/banner2x.jpg) 2x);
+    background-image: url(https://ucarecdn.com/d5ac4479-adc9-4eec-8462-410273fe8d7f/banner.jpg);
+    background-image: -webkit-image-set(url(https://ucarecdn.com/d5ac4479-adc9-4eec-8462-410273fe8d7f/banner.jpg) 1x, url(https://ucarecdn.com/c6613776-54dd-412f-827e-58af8ecea41a/banner2x.jpg) 2x);
+    background-image: image-set(url(https://ucarecdn.com/d5ac4479-adc9-4eec-8462-410273fe8d7f/banner.jpg) 1x, url(https://ucarecdn.com/c6613776-54dd-412f-827e-58af8ecea41a/banner2x.jpg) 2x);
     padding: 80px 0;
     min-height: 364px; } }
 
