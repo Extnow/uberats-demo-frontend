@@ -597,7 +597,9 @@ a {
 
 @media (min-width: 300px) {
   .banner {
-    background-image: url(../img/pushkin/banner_min.png);
+    background-image: url(https://ucarecdn.com/472f80bc-5fdf-4563-a6e0-f7e917b6a6d7/banner_min.png);
+    background-image: -webkit-image-set(url(https://ucarecdn.com/472f80bc-5fdf-4563-a6e0-f7e917b6a6d7/banner_min.png) 1x, url(https://ucarecdn.com/a01bcbe5-43ca-400a-a150-2aabc3373eb8/banner_min2x.jpg) 2x);
+    background-image: image-set(url(https://ucarecdn.com/472f80bc-5fdf-4563-a6e0-f7e917b6a6d7/banner_min.png) 1x, url(https://ucarecdn.com/a01bcbe5-43ca-400a-a150-2aabc3373eb8/banner_min2x.jpg) 2x);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 255px;
@@ -606,7 +608,9 @@ a {
 
 @media (min-width: 461px) {
   .banner {
-    background-image: url(../img/pushkin/banner.png);
+    background-image: url(https://ucarecdn.com/089a9df0-9cd6-48d5-a7ed-05a9c0ab9499/banner.png);
+    background-image: -webkit-image-set(url(https://ucarecdn.com/089a9df0-9cd6-48d5-a7ed-05a9c0ab9499/banner.png) 1x, url(https://ucarecdn.com/c6613776-54dd-412f-827e-58af8ecea41a/banner2x.jpg) 2x);
+    background-image: image-set(url(https://ucarecdn.com/089a9df0-9cd6-48d5-a7ed-05a9c0ab9499/banner.png) 1x, url(https://ucarecdn.com/c6613776-54dd-412f-827e-58af8ecea41a/banner2x.jpg) 2x);
     padding: 80px 0;
     min-height: 364px; } }
 
