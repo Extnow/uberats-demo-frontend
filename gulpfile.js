@@ -1,13 +1,17 @@
 const gulp = require("gulp"),
   sass = require("gulp-sass"),
-  imagemin = require("gulp-imagemin"),
-  autoprefixer = require("gulp-autoprefixer"),
-  minifyCss = require("gulp-clean-css"),
-  clean = require("gulp-clean"),
-  plumber = require("gulp-plumber"),
-  changed = require("gulp-changed"),
-  browserSync = require("browser-sync").create(),
-  run = require("run-sequence");
+  imagemin = require("gulp-imagemin"), // оптимизация изображений
+  autoprefixer = require("gulp-autoprefixer"), // добавление автопрефиксов
+  minifyCss = require("gulp-clean-css"), // минифицирование css
+  clean = require("gulp-clean"), // очистка папок
+  plumber = require("gulp-plumber"), // отлавливает ошибки
+  changed = require("gulp-changed"), // проверяет изменялись ли файлы
+  browserSync = require("browser-sync").create(), // автоматическая перезагрузка страницы
+  run = require("run-sequence"), // для последовательного запуска задач
+  size = require("gulp-size"), // для определения размера файла
+  rename = require("gulp-rename"); // переименование файлов
+// svgmin = require("gulp-svgmin"), // минификация svg
+// svgstore = require("gulp-svgstore"); // для создания спрайтов
 
 gulp.task("scss", function () {
   return gulp.src("src/scss/main.scss")
@@ -17,20 +21,36 @@ gulp.task("scss", function () {
     .pipe(autoprefixer({
       browsers: ["last 2 versions"]
     }))
+    .pipe(size())
+    .pipe(gulp.dest("build/css"))
     .pipe(minifyCss())
+    .pipe(size())
+    .pipe(rename("main.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(browserSync.stream());
 });
 
 gulp.task("img", function () {
   return gulp.src("src/img/**/*")
-    .pipe(changed("build/img"))
+    .pipe(changed("build/img/"))
     .pipe(imagemin([
-      imagemin.optipng({ optimizationLevel: 5 }),
+      imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.jpegtran({ progressive: true })
     ]))
-    .pipe(gulp.dest("build/img/"));
+    .pipe(gulp.dest("build/img/"))
+    .pipe(browserSync.stream());
 });
+
+// gulp.task("svgsprite", function () {
+//   return gulp.src("src/img/*.svg")
+//     .pipe(svgmin())
+//     .pipe(svgstore({
+//       inlineSvg: true
+//     }))
+//     .pipe(rename("sprite.svg"))
+//     .pipe(gulp.dest("build/img"))
+//     .pipe(browserSync.stream());
+// });
 
 gulp.task("clean", function () {
   return gulp.src("build", { read: false })
@@ -43,7 +63,7 @@ gulp.task("build", function (fn) {
 
 gulp.task("serve", function () {
   browserSync.init({
-    server: ""
+    server: "."
   });
 
   gulp.watch("src/scss/**/*.scss", ["scss"]);
