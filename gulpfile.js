@@ -9,9 +9,9 @@ const gulp = require("gulp"),
   browserSync = require("browser-sync").create(), // автоматическая перезагрузка страницы
   run = require("run-sequence"), // для последовательного запуска задач
   size = require("gulp-size"), // для определения размера файла
-  rename = require("gulp-rename"), // переименование файлов
-  svgmin = require("gulp-svgmin"), // минификация svg
-  svgstore = require("gulp-svgstore"); // для создания спрайтов
+  rename = require("gulp-rename"); // переименование файлов
+// svgmin = require("gulp-svgmin"), // минификация svg
+// svgstore = require("gulp-svgstore"); // для создания спрайтов
 
 gulp.task("scss", function () {
   return gulp.src("src/scss/main.scss")
@@ -41,16 +41,16 @@ gulp.task("img", function () {
     .pipe(browserSync.stream());
 });
 
-gulp.task("svgsprite", function () {
-  return gulp.src("src/img/*.svg")
-    .pipe(svgmin())
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img/sprite"))
-    .pipe(browserSync.stream());
-});
+// gulp.task("svgsprite", function () {
+//   return gulp.src("src/img/*.svg")
+//     .pipe(svgmin())
+//     .pipe(svgstore({
+//       inlineSvg: true
+//     }))
+//     .pipe(rename("sprite.svg"))
+//     .pipe(gulp.dest("build/img"))
+//     .pipe(browserSync.stream());
+// });
 
 gulp.task("clean", function () {
   return gulp.src("build", { read: false })
@@ -58,7 +58,7 @@ gulp.task("clean", function () {
 });
 
 gulp.task("build", function (fn) {
-  run("clean", "scss", "img", "svgsprite", fn);
+  run("clean", "scss", "img", fn);
 });
 
 gulp.task("serve", function () {
@@ -68,7 +68,6 @@ gulp.task("serve", function () {
 
   gulp.watch("src/scss/**/*.scss", ["scss"]);
   gulp.watch("src/img/**/*", ["img"]);
-  gulp.watch("src/img/*.svg", ["svgsprite"]);
   browserSync.watch("*.html").on("change", browserSync.reload);
 });
 
