@@ -32,6 +32,9 @@ a {
   text-decoration: none;
   display: inline-block; }
 
+.picture {
+  width: 100%; }
+
 .container {
   max-width: 956px;
   margin: 0 auto;
