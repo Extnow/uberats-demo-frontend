@@ -9,5 +9,5 @@
 * Качественно выполненный проект в портфолио;
 * Прохождение курса должно стать логическим этапом перехода от стажера к младшему разработчику.
 
-#### https://extnow.github.io/verstka/index.html — главная страница UberEats
-#### https://extnow.github.io/verstka/restaurant.html — страница ресторана Трактир «Пушкин»
+#### https://extnow.github.io/uberats-demo-frontend/index.html — главная страница UberEats
+#### https://extnow.github.io/uberats-demo-frontend/restaurant.html — страница ресторана Трактир «Пушкин»
