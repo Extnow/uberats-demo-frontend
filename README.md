@@ -11,3 +11,9 @@
 
 #### https://extnow.github.io/uberats-demo-frontend/index.html — главная страница UberEats
 #### https://extnow.github.io/uberats-demo-frontend/restaurant.html — страница ресторана Трактир «Пушкин»
+
+### Запуск проекта:
+
+* Перейти в ветку develop
+* Скачать проект
+* Для доработки/редактирования скачать пакеты зависимостей (npm i) и запустить gulp
