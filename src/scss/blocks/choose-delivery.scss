@@ -1,0 +1,26 @@
+@media ($xs) {
+  .choose-delivery {
+    display: none;
+  }
+}
+
+@media ($md) {
+  .choose-delivery {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.choose-delivery__padding-space {
+  padding: 0 10px;
+}
+
+.choose-delivery__main {
+  padding-top: 23px;
+}
+
+@media ($md) {
+  .choose-delivery__main {
+    display: none;
+  }
+}

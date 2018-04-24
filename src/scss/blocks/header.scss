@@ -1,0 +1,42 @@
+.header {
+  background-color: #fff;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+
+  &__wrapper {
+    padding: 16px 0;
+  }
+}
+
+@media (max-width: 913px) {
+  .header {
+    font-size: 13px;
+  }
+}
+
+.header__logo {
+  display: flex;
+  align-self: center;
+}
+
+.header__buttons {
+  display: flex;
+  justify-content: flex-end;
+
+  &-item {
+    margin-left: 16px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.header__buttons-item--basket {
+  display: none;
+}
+
+@media ($sm) {
+  .header__buttons-item--basket {
+    display: block;
+  }
+}

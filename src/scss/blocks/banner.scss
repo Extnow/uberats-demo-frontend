@@ -1,0 +1,19 @@
+@media ($xs) {
+  .banner {
+    background-image: url(https://ucarecdn.com/472f80bc-5fdf-4563-a6e0-f7e917b6a6d7/banner_min.png);
+    background-image: image-set(url(https://ucarecdn.com/472f80bc-5fdf-4563-a6e0-f7e917b6a6d7/banner_min.png) 1x, url(https://ucarecdn.com/a01bcbe5-43ca-400a-a150-2aabc3373eb8/banner_min2x.jpg) 2x);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 256px;
+    padding-top: 131px;
+  }
+}
+
+@media ($sm) {
+  .banner {
+    background-image: url(https://ucarecdn.com/d5ac4479-adc9-4eec-8462-410273fe8d7f/banner.jpg);
+    background-image: image-set(url(https://ucarecdn.com/d5ac4479-adc9-4eec-8462-410273fe8d7f/banner.jpg) 1x, url(https://ucarecdn.com/c6613776-54dd-412f-827e-58af8ecea41a/banner2x.jpg) 2x);
+    padding: 80px 0;
+    min-height: 364px;
+  }
+}

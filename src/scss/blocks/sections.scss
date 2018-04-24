@@ -1,0 +1,42 @@
+@media ($xs) {
+  .section--moscow-restaurants {
+    padding-top: 24px;
+    padding-bottom: 64px;
+  }
+
+  .section--restaurant-menu {
+    padding-top: 111px;
+    padding-bottom: 80px;
+  }
+
+  .section__title {
+    text-align: center;
+    line-height: 34px;
+    margin-bottom: 56px;
+
+    &:after {
+      display: block;
+      content: "";
+      height: 1px;
+      width: 50px;
+      margin: 0 auto;
+      background-color: #757575;
+    }
+  }
+}
+
+@media ($sm) {
+  .section--restaurant-menu {
+    padding-top: 40px;
+  }
+
+  .section__title {
+    text-align: left;
+    line-height: 34px;
+    margin-bottom: 32px;
+
+    &:after {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.footer {
+  background-color: #262626;
+  position: relative;
+
+  &__wrapper {
+    padding-top: 56px;
+    padding-bottom: 40px;
+  }
+}
+
+.footer__logo {
+  min-height: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.footer__info {
+  padding: 32px 0 48px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.foter__social-id {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 33px;
+}
+
+.footer__hashtag {
+  color: #49a144;
+}
+
+.footer__item-link {
+  margin-bottom: 23px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer__link {
+  font-size: 13px;
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    color: #e0e0e0;
+  }
+
+  &--small {
+    font-size: 11px;
+  }
+}
+
+@media ($xs) {
+  .footer__about-links,
+  .footer__other-links {
+    margin-top: 23px;
+  }
+}
+
+@media ($sm) {
+  .footer__about-links,
+  .footer__other-links {
+    margin-top: 0px;
+  }
+}
+
+.footer__download-app {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+  &__wrapper {
+    min-height: 120px;
+    max-width: 297px;
+    min-width: 240px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footer__other {
+  padding: 40px 0 0 0;
+  color: #fff;
+  font-size: 11px;
+}
+
+@media ($xs) {
+  .footer__privacy,
+  .footer__terms {
+    margin-top: 23px;
+  }
+}
+
+@media ($sm) {
+  .footer__privacy,
+  .footer__terms {
+    margin-top: 0px;
+  }
+}

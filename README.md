@@ -10,4 +10,5 @@
 * Прохождение курса должно стать логическим этапом перехода от стажера к младшему разработчику.
 
 #### https://extnow.github.io/uberats-demo-frontend/index.html — главная страница UberEats
+
 #### https://extnow.github.io/uberats-demo-frontend/restaurant.html — страница ресторана Трактир «Пушкин»

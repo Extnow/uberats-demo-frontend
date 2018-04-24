@@ -1,0 +1,54 @@
+.select-delivery-type {
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  line-height: 24px;
+  padding: 8px 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.select-languages {
+  position: relative;
+  max-width: 227px;
+  width: 100%;
+  padding: 12px 8px 12px 48px;
+  border: none;
+  background-color: #3b3b3b;
+  text-transform: uppercase;
+  background-image: url("../img/world.svg"), url("../img/caret.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 16px 50%, 95% 50%;
+  color: #fff;
+  font-size: 13px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.input-delivery-location {
+  flex-basis: 292px;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  height: 40px;
+  padding: 8px 18px 8px 36px;
+  line-height: 24px;
+  background-image: url("../img/location.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 50%;
+}
+
+.input-search {
+  width: 100%;
+  padding-left: 30px;
+  min-height: 50px;
+  border: none;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+  background-image: url("../img/magnifier.svg");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  color: #626262;
+
+  &__wrapper {
+    padding-top: 29px;
+  }
+}
