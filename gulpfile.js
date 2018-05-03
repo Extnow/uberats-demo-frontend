@@ -18,8 +18,6 @@ gulp.task('scss', () => gulp.src('src/scss/main.scss')
   .pipe(autoprefixer({
     browsers: ['last 2 versions'],
   }))
-  .pipe(size())
-  .pipe(gulp.dest('build/css'))
   .pipe(minifyCss())
   .pipe(size())
   .pipe(rename('main.min.css'))
