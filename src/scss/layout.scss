@@ -19,10 +19,6 @@ $md: 'min-width: 769px';
   }
 }
 
-.col-0 {
-  flex-basis: 0;
-}
-
 /* Portrait phones and smaller */
 @media ($xs) {
   .col-xs-1,
@@ -39,10 +35,6 @@ $md: 'min-width: 769px';
   .col-xs-12 {
     padding-left: 8px;
     padding-right: 8px;
-  }
-
-  .col-xs-0 {
-    display: none;
   }
 
   .col-xs-1 {
