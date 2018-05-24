@@ -1,18 +1,26 @@
-.select-languages {
-  position: relative;
-  max-width: 227px;
-  width: 100%;
-  padding: 12px 8px 12px 48px;
-  border: none;
-  background-color: #3b3b3b;
-  text-transform: uppercase;
-  background-image: url("../img/world.svg"), url("../img/caret.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: 16px 50%, 95% 50%;
-  color: #fff;
-  font-size: 13px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+@media ($xs) {
+  .select-languages {
+    position: relative;
+    max-width: 176px;
+    width: 100%;
+    padding: 12px 8px 12px 48px;
+    border: none;
+    background-color: #3b3b3b;
+    text-transform: uppercase;
+    background-image: url("../img/world.svg"), url("../img/caret.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 16px 50%, 95% 50%;
+    color: #fff;
+    font-size: 13px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+}
+
+@media ($md) {
+  .select-languages {
+    max-width: 227px;
+  }
 }
 
 @media ($xs) {
