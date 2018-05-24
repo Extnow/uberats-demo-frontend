@@ -1,0 +1,39 @@
+.food-type {
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  display: none;
+}
+
+@media ($sm) {
+  .food-type {
+    display: block;
+  }
+}
+
+.food-type__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px 0;
+}
+
+.food-type__item {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.food-type__link {
+  padding: 16px 0;
+  font-size: 16px;
+  color: #626262;
+
+  &--active {
+    color: #327430;
+  }
+
+  &:hover,
+  &:focus {
+    color: #327430;
+  }
+}
