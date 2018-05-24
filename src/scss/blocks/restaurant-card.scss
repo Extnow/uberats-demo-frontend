@@ -1,30 +1,38 @@
 .restaurant-card {
   &__description {
-    padding-top: 16px;
-    min-height: 110px;
-    margin-bottom: 16px;
+    padding-top: 14px;
+    padding-bottom: 20px;
   }
 
   &__restaurant-link {
-    width: 100%;
+    display: block;
+    margin-bottom: 16px;
   }
+}
+
+.restaurant-card__title {
+  line-height: 24px;
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 4px;
 }
 
 @media ($xs) {
   .restaurant-card--banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #fff;
     box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
     border-radius: 2px;
     text-align: center;
     padding: 24px;
-    min-height: 180px;
   }
 }
 
 @media ($sm) {
   .restaurant-card--banner {
     padding: 38px 32px;
-    min-height: 204px;
   }
 }
 
@@ -33,8 +41,7 @@
     flex-direction: column;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
-    min-height: 70px;
+    padding-top: 54px;
   }
 }
 

@@ -3,14 +3,14 @@
 }
 
 .social-icons__item {
+  margin-right: 12px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social-icons__picture {
   width: 24px;
   height: 24px;
-
-  &:nth-child(1) {
-    margin-right: 12px;
-  }
-
-  &:nth-child(2) {
-    margin-right: 8px;
-  }
 }

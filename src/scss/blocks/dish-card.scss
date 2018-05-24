@@ -2,17 +2,21 @@
   .dish-card {
     display: flex;
     justify-content: space-between;
-    min-height: 109px;
-    min-width: 200px;
     border: 1px solid rgba(117, 117, 117, 0.2);
     border-radius: 2px;
     margin-bottom: 16px;
 
     &__description {
-      width: 100%;
       display: flex;
       flex-direction: column;
       padding: 6px;
+    }
+
+    &__title {
+      line-height: 24px;
+      font-size: 14px;
+      margin: 0;
+      margin-bottom: 4px;
     }
 
     &__photo {
@@ -22,15 +26,18 @@
 
     &__price {
       margin-top: auto;
+      color: #1d1d1d;
     }
   }
 }
 
 @media ($sm) {
   .dish-card {
-    min-width: 360px;
-    min-height: 160px;
     margin-bottom: 32px;
+
+    &__title {
+      font-size: 16px;
+    }
 
     &__description {
       padding: 16px;
