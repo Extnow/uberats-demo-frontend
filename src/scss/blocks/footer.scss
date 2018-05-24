@@ -3,13 +3,13 @@
   position: relative;
 
   &__wrapper {
-    padding-top: 56px;
     padding-bottom: 40px;
   }
 }
 
 .footer__logo {
-  min-height: 60px;
+  padding-top: 56px;
+  padding-bottom: 40px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
@@ -68,9 +68,8 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 
   &__wrapper {
-    min-height: 120px;
+    padding: 40px 0;
     max-width: 297px;
-    min-width: 240px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -79,7 +78,7 @@
 }
 
 .footer__other {
-  padding: 40px 0 0 0;
+  padding: 40px 0;
   color: #fff;
   font-size: 11px;
 }

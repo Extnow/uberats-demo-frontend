@@ -5,10 +5,9 @@
 }
 
 .btn--sign-in {
-  height: 40px;
   border: 1px solid #e0e0e0;
   border-radius: 2px;
-  padding: 8px 15.5px;
+  padding: 12px 15.5px;
   transition: all 400ms ease;
 
   &:hover,
@@ -18,21 +17,19 @@
 }
 
 .btn--register {
-  height: 40px;
   background-color: #262626;
   border-radius: 2px;
   color: #fff;
-  padding: 8px 15.5px;
+  padding: 13px 15.5px;
 }
 
 .btn--basket {
-  height: 40px;
+  padding: 7px 11px;
 }
 
 .btn--scroll-up {
   position: absolute;
-  width: 80px;
-  height: 80px;
+  padding: 40px;
   right: 16px;
   bottom: 24px;
   background-color: #59bd5a;
