@@ -1,0 +1,26 @@
+.title {
+  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #1d1d1d;
+  margin: 0;
+}
+
+@media ($xs) {
+  .title--first {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@media ($sm) {
+  .title--first {
+    font-size: 36px;
+  }
+}
+
+.title--second {
+  line-height: 34px;
+  font-size: 22px;
+  margin: 16px 0;
+}
