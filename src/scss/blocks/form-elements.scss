@@ -7,7 +7,7 @@
     border: none;
     background-color: #3b3b3b;
     text-transform: uppercase;
-    background-image: url("../img/world.svg"), url("../img/caret.svg");
+    background-image: url('../img/world.svg'), url('../img/caret.svg');
     background-repeat: no-repeat, no-repeat;
     background-position: 16px 50%, 95% 50%;
     color: #fff;
@@ -30,7 +30,7 @@
     font-size: 13px;
     border: none;
     border-bottom: 1px solid rgba(117, 117, 117, 0.3);
-    background-image: url("../img/magnifier.svg");
+    background-image: url('../img/magnifier.svg');
     background-repeat: no-repeat;
     background-position: 0 50%;
     color: #626262;
