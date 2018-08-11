@@ -1,0 +1,70 @@
+.restaurant-card {
+  &__description {
+    padding-top: 14px;
+    padding-bottom: 20px;
+  }
+
+  &__restaurant-link {
+    display: block;
+    margin-bottom: 16px;
+  }
+}
+
+.restaurant-card__title {
+  line-height: 24px;
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+@media ($xs) {
+  .restaurant-card--banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+    border-radius: 2px;
+    text-align: center;
+    padding: 24px;
+  }
+}
+
+@media ($sm) {
+  .restaurant-card--banner {
+    padding: 38px 32px;
+  }
+}
+
+@media ($xs) {
+  .restaurant-card__properties {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 54px;
+  }
+}
+
+@media (min-width: 540px) {
+  .restaurant-card__properties {
+    align-items: flex-end;
+    flex-direction: row;
+  }
+}
+
+@media ($xs) {
+  .restaurant-card__delivery-time {
+    background: #262626;
+    border-radius: 16px;
+    padding: 8px 16px;
+    font-size: 13px;
+    color: #fff;
+    align-self: center;
+  }
+}
+
+@media (min-width: 540px) {
+  .restaurant-card__delivery-time {
+    align-self: flex-end;
+  }
+}

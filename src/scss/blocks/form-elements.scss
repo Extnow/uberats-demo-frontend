@@ -1,0 +1,48 @@
+@media ($xs) {
+  .select-languages {
+    position: relative;
+    max-width: 176px;
+    width: 100%;
+    padding: 12px 8px 12px 48px;
+    border: none;
+    background-color: #3b3b3b;
+    text-transform: uppercase;
+    background-image: url('../img/world.svg'), url('../img/caret.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: 16px 50%, 95% 50%;
+    color: #fff;
+    font-size: 13px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+}
+
+@media ($md) {
+  .select-languages {
+    max-width: 227px;
+  }
+}
+
+@media ($xs) {
+  .input-search {
+    width: 100%;
+    padding: 15px 0 15px 30px;
+    font-size: 13px;
+    border: none;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+    background-image: url('../img/magnifier.svg');
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    color: #626262;
+
+    &__wrapper {
+      padding-top: 29px;
+    }
+  }
+}
+
+@media ($sm) {
+  .input-search {
+    font-size: 16px;
+  }
+}

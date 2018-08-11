@@ -1,0 +1,40 @@
+.btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.btn--sign-in {
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  padding: 12px 15.5px;
+  transition: all 400ms ease;
+
+  &:hover,
+  &:focus {
+    background-color: rgb(245, 245, 245);
+  }
+}
+
+.btn--register {
+  background-color: #262626;
+  border-radius: 2px;
+  color: #fff;
+  padding: 13px 15.5px;
+}
+
+.btn--basket {
+  padding: 7px 11px;
+}
+
+.btn--scroll-up {
+  position: absolute;
+  padding: 40px;
+  right: 16px;
+  bottom: 24px;
+  background-color: #59bd5a;
+  background-image: url('../img/arrow_up.svg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+}
