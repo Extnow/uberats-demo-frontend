@@ -7,5 +7,5 @@
 ### Запуск проекта:
 
 - Скачать проект
-- npm i
-- gulp
+- yarn
+- yarn run gulp
