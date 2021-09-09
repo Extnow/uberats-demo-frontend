@@ -11,45 +11,69 @@ const run = require('run-sequence'); // для последовательног�
 const size = require('gulp-size'); // для определения размера файла
 const rename = require('gulp-rename'); // переименование файлов
 
-gulp.task('scss', () => gulp.src('src/scss/main.scss')
-  .pipe(changed('build/css'))
-  .pipe(plumber())
-  .pipe(sass().on('error', sass.logError))
-  .pipe(autoprefixer({
-    browsers: ['last 2 versions'],
-  }))
-  .pipe(minifyCss())
-  .pipe(size())
-  .pipe(rename('main.min.css'))
-  .pipe(gulp.dest('build/css'))
-  .pipe(browserSync.stream()));
+gulp.task('scss', done => {
+  gulp
+    .src('src/scss/main.scss')
+    .pipe(changed('build/css'))
+    .pipe(plumber())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(
+      autoprefixer({
+        browsers: ['last 2 versions']
+      })
+    )
+    .pipe(minifyCss())
+    .pipe(size())
+    .pipe(rename('main.min.css'))
+    .pipe(gulp.dest('build/css'))
+    .pipe(browserSync.stream());
 
-gulp.task('img', () => gulp.src('src/img/**/*')
-  .pipe(changed('build/img/'))
-  .pipe(imagemin([
-    imagemin.optipng({ optimizationLevel: 3 }),
-    imagemin.jpegtran({ progressive: true }),
-  ]))
-  .pipe(gulp.dest('build/img/'))
-  .pipe(browserSync.stream()));
-
-gulp.task('clean', () => gulp.src('build', { read: false })
-  .pipe(clean()));
-
-gulp.task('build', (fn) => {
-  run('clean', 'scss', 'img', fn);
+  done();
 });
 
-gulp.task('serve', () => {
+gulp.task('img', done => {
+  gulp
+    .src('src/img/**/*')
+    .pipe(changed('build/img/'))
+    .pipe(
+      imagemin([
+        imagemin.optipng({ optimizationLevel: 3 }),
+        imagemin.jpegtran({ progressive: true })
+      ])
+    )
+    .pipe(gulp.dest('build/img/'))
+    .pipe(browserSync.stream());
+
+  done();
+});
+
+gulp.task('clean', done => {
+  gulp.src('build', { read: false }).pipe(clean());
+
+  done();
+});
+
+gulp.task(
+  'build',
+  gulp.series('scss', 'img', done => {
+    done();
+  })
+);
+
+gulp.task('serve', done => {
   browserSync.init({
-    server: '.',
+    server: '.'
   });
 
-  gulp.watch('src/scss/**/*.scss', ['scss']);
-  gulp.watch('src/img/**/*', ['img']);
-  browserSync.watch('*.html').on('change', browserSync.reload);
+  gulp.watch('src/scss/**/*.scss', gulp.series('scss'));
+  gulp.watch('src/img/**/*', gulp.series('img'));
+
+  browserSync.watch('*.html').on('change', () => {
+    browserSync.reload();
+    done();
+  });
+
+  done();
 });
 
-gulp.task('default', (fn) => {
-  gulp.start('build', 'serve', fn);
-});
+gulp.task('default', gulp.series('serve'));
