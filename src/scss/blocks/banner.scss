@@ -1,6 +1,10 @@
 @media ($xs) {
   .banner {
     background-image: url(../img/pushkin/banner_min.png);
+    background-image: image-set(
+      url(../img/pushkin/banner_min.png) 1x,
+      url(../img/pushkin/banner_min@2x.png) 2x
+    );
     background-repeat: no-repeat;
     background-size: cover;
     max-height: 256px;
@@ -11,6 +15,10 @@
 @media ($sm) {
   .banner {
     background-image: url(../img/pushkin/banner.png);
+    background-image: image-set(
+      url(../img/pushkin/banner.png) 1x,
+      url(../img/pushkin/banner@2x.png) 2x
+    );
     padding: 80px 0;
     min-height: 364px;
   }
