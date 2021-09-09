@@ -8,4 +8,5 @@
 
 - Скачать проект
 - yarn
+- yarn gulp build
 - yarn run gulp
